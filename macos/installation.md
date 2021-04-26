@@ -8,6 +8,7 @@ brew install git
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 
 # Dev
-brew install n # nodejs
-sudo npm install --global yarn # yarn
+brew install n                  # nodejs
+sudo npm install -g yarn        # yarn
+sudo npm install -g typescript  # typescript
 ```
