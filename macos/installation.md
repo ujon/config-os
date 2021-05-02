@@ -11,4 +11,5 @@ brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Librar
 brew install n                  # nodejs
 sudo npm install -g yarn        # yarn
 sudo npm install -g typescript  # typescript
+sudo npm install -g serverless  # serverless
 ```
