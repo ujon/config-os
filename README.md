@@ -1,8 +1,10 @@
-# OS SETTING
+# Config OS
 
 ## OS
-- [macOS](macos/installation.md)
-- [ubuntu](ubuntu/installation.md)
+
+- [macos](macos)
+- [ubuntu](ubuntu)
 
 ## Others
-- [zsh](others/zsh.md)
+
+- [zsh plugins](zsh.md)

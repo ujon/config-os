@@ -5,6 +5,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
 	git
 	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -16,10 +17,9 @@ alias google="open -a 'Google Chrome'"
 alias vscode="open -a 'Visual Studio Code'"
 
 # Shortcut
-alias lll="ls -al"
 alias ll="ls -l"
 alias cc="clear"
-alias nn="lsof -i TCP -P"
+alias nn="lsof -nP | grep LISTEN"
 
 # Site
 # required: ssh, sshpass
