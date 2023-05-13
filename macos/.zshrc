@@ -19,7 +19,26 @@ alias vscode="open -a 'Visual Studio Code'"
 # Shortcut
 alias ll="ls -l"
 alias cc="clear"
-alias nn="lsof -nP | grep LISTEN"
+alias nn="sudo lsof -PiTCP -sTCP:LISTEN"
+
+function tt() {
+    local maxdepth=2
+    local directory=0
+    local simple=0
+    while getopts "m:d-:s-:" opt; do
+        case $opt in
+            m) maxdepth=$OPTARG ;;
+            d) directory=1 ;;
+            s) simple=1 ;;
+            \?) echo "Invalid option: -$OPTARG" >&2 ;;
+        esac
+    done
+    shift $((OPTIND-1))
+    local findcmd="find . -maxdepth $maxdepth"
+    if [[ $directory -eq 1 ]]; then findcmd="$findcmd -type d" fi
+    if [[ $simple -eq 1 ]]; then findcmd="$findcmd -not -path '*/\.*'" fi
+    eval "$findcmd" | sed -e "s/[^-][^\/]*\// │   /g" -e "s/│   \([^ ]\)/├── \1/"
+}
 
 # Site
 # required: ssh, sshpass
