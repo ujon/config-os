@@ -40,6 +40,16 @@ function tt() {
     eval "$findcmd" | sed -e "s/[^-][^\/]*\// │   /g" -e "s/│   \([^ ]\)/├── \1/"
 }
 
+function help() {
+local macos_shortcuts="
+\e]8;;https://support.apple.com/en-us/HT201236\aMacOS Shortcuts\e]8;;\a
+Command + Shift + G                     Open a Go to Folder window
+Command + Control + Spacebar            Show the Character Viewer
+"
+
+echo "$macos_shortcuts"
+}
+
 # Site
 # required: ssh, sshpass
 function ujon() {
