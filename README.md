@@ -2,9 +2,9 @@
 
 ## OS
 
-- [macos](macos)
-- [ubuntu](ubuntu)
+- [macos](./macos)
+- [ubuntu](./ubuntu)
 
 ## Others
 
-- [zsh plugins](zsh.md)
+- [zsh plugins](zsh-plugins.md)

@@ -44,8 +44,18 @@ function help() {
 local macos_shortcuts="
 \e]8;;https://support.apple.com/en-us/HT201236\aMacOS Shortcuts\e]8;;\a
 Command + Shift + G                     Open a Go to Folder window
+Command + Spacebar                      Show or hide the Spotlight search field
 Command + Control + Spacebar            Show the Character Viewer
 "
+
+local chrome_shortcuts="
+\e]8;;https://support.google.com/chrome/answer/157179\aChrome Shortcuts\e]8;;\a
+Command + Shift + B                     Show or hide the Bookmarks Bar
+"
+
+echo "$macos_shortcuts"
+echo "$chrome_shortcuts"
+}
 
 echo "$macos_shortcuts"
 }
