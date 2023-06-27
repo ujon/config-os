@@ -46,6 +46,7 @@ local macos_shortcuts="
 Command + Shift + G                     Open a Go to Folder window
 Command + Spacebar                      Show or hide the Spotlight search field
 Command + Control + Spacebar            Show the Character Viewer
+Command + Control + F                   Use the app in full screen, if supported by the app.
 "
 
 local chrome_shortcuts="
